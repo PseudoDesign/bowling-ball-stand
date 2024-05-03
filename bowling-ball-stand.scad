@@ -1,16 +1,16 @@
 $fn = 200;
 
-logo_file = "/Users/adam/Desktop/adam-map.png";
+logo_file = "./adam-map.png";
 
 ball_diameter = 216;
 
 height = 15;
-thickness = 4;
+thickness = 5;
 od = 110;
 id = 79;
 
 top_rim = 2;
-bottom_rim = 2;
+bottom_rim = 4;
 
 image_width = 500;
 image_height = 100;
@@ -59,7 +59,7 @@ module print_head_2(hex_color="#990099") {
     }
 }
 
-print_head_2();
+//print_head_2();
 
-//print_head_1();
+print_head_1();
 
