@@ -51,7 +51,12 @@ module print_head_2(hex_color="#990099") {
     color(hex_color){
         difference() {
             union() {
-                cylinder(h = bottom_rim, r1 = od/2, r2 = od/2, center = false);
+                cylinder(h = bottom_rim * 3 / 4 + .001, r1 = od/2, r2 = od/2, center = false);
+                
+                translate([0, 0, bottom_rim * 3 / 4])
+                cylinder(h = bottom_rim / 4, r1 = od/2, r2 = (od-thickness)/2, center = false);
+
+                
                 logo();
             }
             print_head_1();
@@ -59,7 +64,7 @@ module print_head_2(hex_color="#990099") {
     }
 }
 
-//print_head_2();
+print_head_2();
 
-print_head_1();
+//print_head_1();
 
