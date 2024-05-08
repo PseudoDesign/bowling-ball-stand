@@ -1,13 +1,12 @@
 $fn = 200;
 
-logo_file = "./adam-map.png";
+logo_file = "./matthew.png";
 
 ball_diameter = 216;
 ball_radius = ball_diameter / 2;
 
 height = 15;
-base_thickness = 5;
-od = 110;
+od = 100;
 id = 79;
 ir = id / 2;
 
@@ -16,19 +15,19 @@ ball_clearance = ball_radius - sqrt(pow(ball_radius, 2) - pow(ir, 2));
 
 
 top_rim = 2;
-bottom_rim = 4;
 
 image_width = 500;
 image_height = 100;
 logo_diameter = id - 2;
-logo_height = 2;
-floor_height = 2;
+logo_height = 1;
+floor_height = 1;
 logo_overlap = 0.1;
 
 ball_holder_height = floor_height + logo_height + 1.25 * ball_clearance;
 
 base_lip = 4;
 top_lip = 2;
+base_thickness = 3;
 
 
 module logo() {
